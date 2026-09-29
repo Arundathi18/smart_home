@@ -1,0 +1,15 @@
+opencv-python>=4.9,<5
+# Pinned exactly: newer mediapipe releases (0.10.20+) dropped the legacy
+# `mediapipe.solutions` API (Hands, drawing_utils) that hand_tracker.py uses,
+# in favor of the newer Tasks API. 0.10.14 is the newest version that still
+# has it.
+mediapipe==0.10.14
+numpy>=1.26,<2
+
+# Phase 2: gesture dataset + model training
+scikit-learn>=1.3,<2
+pandas>=2.0,<3
+matplotlib>=3.8,<4
+
+# Phase 4: ESP32 serial bridge
+pyserial>=3.5,<4

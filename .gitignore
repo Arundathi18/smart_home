@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
+
+# Secrets / environment config - none exist yet, but never let these slip in.
+.env
+.env.*
+*.pem
+*.key
+
+# Local Claude Code tool settings - machine-specific, not project source.
+.claude/
+
+# Phase 2: your personal collected data and trained model - regenerate
+# locally with apps/collect_dataset.py and apps/train_model.py.
+data/
+models/
+
+# Phase 4: Arduino IDE / arduino-cli build artifacts
+esp32_firmware/*/build/
